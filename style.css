@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 36px;
+    font-family: sans-serif;
+    background-color: rgb(34, 54, 97);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.txt-info {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+}
+
+.txt-info p {
+    margin-right: 3%;
+    margin-left: 6%;
+}
+
+/*Header*/
+
+.header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.header-titulo {
+    width: 180px;
+}
+
+.header-pontuacao {
+    padding: 24px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #eee;
+    color: rgb(92, 86, 86);
+    border-radius: 16px;
+}
+
+.header-pontuacao-num {
+    padding: 8px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-nicks {
+    padding: 8px;
+    position: absolute;
+    top: 45px;
+    color: #eee;
+    border-radius: 16px;
+}
+
+.header-nicks-esquerda {
+    background-color: green;
+    left: -50px;
+}
+
+.header-nicks-direita {
+    background-color: crimson;
+    right: -20px;
+}
+
+/*Home*/
+
+.cards {
+    width: 60%;
+    display: flex;
+    margin: 5% auto 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 64px;
+}
+
+.cards-card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 16px solid transparent;
+}
+
+.cards-card-img {
+    width: 60%;
+}
+
+.card-pedra {
+    border-color: crimson;
+}
+
+.card-tesoura {
+    border-color: yellow;
+}
+
+.card-papel {
+    border-color: blue;
+}
+
+/*Seção resultado*/
+
+.result {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #eee;
+}
+
+.result-cont-ganhador > h2 {
+    font-size: 30px;
+}
+
+.result-titulo {
+    margin-bottom: 24px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.result-cont-ganhador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.result-cont-ganhador-botao {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+/*Footer*/
+
+.roda-pe {
+    margin-top: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.roda-pe_botao {
+    padding: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/*Css modificações*/
+
+.troca-none {
+    display: none;
+}
+
+.vencedor-css-pri {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #eeeeee1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vencedor-css-sec {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #eeeeee0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vencedor-css-ter {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #eeeeee0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vencedor {
+    /* display: none; */
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    z-index: -1;
+}
+
+.vencedor_maquina {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    z-index: -1;
+}

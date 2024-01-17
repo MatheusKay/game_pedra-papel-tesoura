@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container header">
+        <h1 class="header-titulo">Pedra Papel Tesoura</h1>
+        <div class="header-pontuacao">
+            <h4>Pontuação</h4>
+            <div>
+                <span id="pontuacao-jogador" class="header-pontuacao-num">0</span>
+                <span class="header-pontuacao-num">-</span>
+                <span id="pontuacao-maquina" class="header-pontuacao-num">0</span>
+            </div>
+            <span class="header-nicks header-nicks-esquerda">Jogador</span>
+            <span class="header-nicks header-nicks-direita">Cpu</span>
+        </div>
+    </header>
+    <main>
+        <section id="secao-home" class="container cards">
+            <button id="btn" class="cards-card card-papel">
+                <img class="cards-card-img" src="imagens/pedra-papel-tesoura_3.png" alt="Papel">
+            </button>
+            <button id="btn" class="cards-card card-tesoura">
+                <img class="cards-card-img" src="imagens/pedra-papel-tesoura 1.png" alt="Tesoura">
+            </button>
+            <button id="btn" class="cards-card card-pedra">
+                <img class="cards-card-img" src="imagens/pedra-papel-tesoura 2.png" alt="Pedra">
+            </button>
+        </section>
+        <div id="text-info" class="container txt-info troca-none">
+            <p class="result-titulo">Voce jogou</p>
+            <p class="result-titulo">Seu oponente jogou</p>
+        </div>
+        <section id="secao-result" class="container result troca-none">
+            <div>
+                <div id="sua-escolha">
+                </div>
+                <div id="jogador-win" class="vencedor troca-none">
+                    <div class="vencedor-css-ter">
+                        <div class="vencedor-css-sec">
+                            <div class="vencedor-css-pri">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div class="result-cont-ganhador">
+                <h2 id="result-tela"></h2>
+                <button id="jogar-novamente" class="result-cont-ganhador-botao">Jogue novamentes</button>
+            </div>
+            <div id="escolha-maquina">
+            </div>
+            <div id="maquina-win" class="vencedor_maquina troca-none">
+                <div class="vencedor-css-ter">
+                    <div class="vencedor-css-sec">
+                        <div class="vencedor-css-pri">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="roda-pe">
+        <button class="roda-pe_botao">
+            Regras
+        </button>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

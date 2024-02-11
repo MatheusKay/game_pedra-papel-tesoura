@@ -8,6 +8,7 @@ body {
     padding: 36px;
     font-family: sans-serif;
     background-color: rgb(34, 54, 97);
+    overflow-x: hidden;
 }
 
 button {
@@ -176,7 +177,8 @@ button {
 
 /*Css modificações*/
 
-.troca-none {
+.troca-none,
+.escolha-info {
     display: none;
 }
 
@@ -223,4 +225,124 @@ button {
     top: -150px;
     right: -150px;
     z-index: -1;
+}
+
+/*Media*/
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 16px;
+    }
+
+    .header {
+        padding: 16px;
+    }
+
+    .header-titulo {
+        font-size: 32px;
+    }
+
+    .header-pontuacao {
+        padding: 16px 24px;
+        justify-content: space-evenly;
+    }
+
+    .header-nicks {
+        font-size: 14px;
+        top: 54px;
+    }
+
+    .header-nicks-direita {
+        right: -20px;
+    }
+
+    .header-nicks-esquerda {
+        left: -45px;
+    }
+
+    .header-pontuacao-num {
+        padding-top: 8px;
+        font-size: 16px;
+    }
+
+    .txt-info {
+        display: none;
+    }
+
+    .escolha-info {
+        padding: 8px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Seçao cards*/
+
+    .cards-card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 25% auto 0;
+        column-gap: 36px;
+        row-gap: 36px;
+    }
+
+    /*Seção vitoria*/
+
+    .result {
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .vencedor,
+    .vencedor_maquina {
+        height: 45%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vencedor_maquina {
+        height: 64em;
+    }
+
+    .vencedor-css-pri {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vencedor-css-sec {
+        width: 250px;
+        height: 250px;
+    }
+
+    .vencedor-css-ter {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .troca-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .txt-info {
+        margin-top: 25%;
+    }
+
+    .escolha-info {
+        display: none;
+    }
+    
+    .cards {
+        width: 100%;
+        margin-top: 25%;
+    }
 }

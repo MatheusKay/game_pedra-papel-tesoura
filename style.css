@@ -249,7 +249,7 @@ button {
 
     .header-nicks {
         font-size: 14px;
-        top: 54px;
+        top: 50%;
     }
 
     .header-nicks-direita {
@@ -309,7 +309,8 @@ button {
     }
 
     .vencedor_maquina {
-        height: 64em;
+        height: 63.8em;
+        width: 97%;
     }
 
     .vencedor-css-pri {

@@ -235,13 +235,15 @@ button {
     }
 
     .header {
-        min-height: 180px;
+        min-height: 200px;
         height: 100%;
         padding: 16px;
     }
 
     .header-titulo {
         font-size: 32px;
+        display: flex;
+        align-items: center;
     }
 
     .header-pontuacao {

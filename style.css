@@ -235,7 +235,8 @@ button {
     }
 
     .header {
-        min-height: 160px;
+        min-height: 180px;
+        height: 100%;
         padding: 16px;
     }
 

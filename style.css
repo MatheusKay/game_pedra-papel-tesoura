@@ -235,12 +235,13 @@ button {
     }
 
     .header {
-        min-height: 200px;
+        min-height: 160px;
         height: 100%;
         padding: 16px;
     }
 
     .header-titulo {
+        width: 125px;
         font-size: 32px;
         display: flex;
         align-items: center;

@@ -158,23 +158,6 @@ button {
     font-weight: bold;
 }
 
-/*Footer*/
-
-.roda-pe {
-    margin-top: 5%;
-    display: flex;
-    justify-content: end;
-}
-
-.roda-pe_botao {
-    padding: 16px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #eee;
-    border-radius: 16px;
-    cursor: pointer;
-}
-
 /*Css modificações*/
 
 .troca-none,
